@@ -21,7 +21,7 @@ RUN apt-get -y install libmysqlclient20 openssl
 
 COPY --from=build-step /mangos /mangos
 WORKDIR /mangos/bin
-RUN cp ../etc/realmd.conf.dist ../etc/realmd.conf
+#RUN cp ../etc/realmd.conf.dist ../etc/realmd.conf
 RUN chmod +x realmd
 
 EXPOSE 3724
